@@ -1,0 +1,72 @@
+1.Document root 
+    adalah lokasi folder dimana file website dari sebuah situs disimpan
+
+2.Pada apache web server, apakah dokumen root harus terletak dalam direktori C:\xampp\htdocs ?
+    tidak, dokumen root pada Apache Web Server tidak harus terletak dalam direktori c:\xampp\htdocs. karena seracara default, jika anda menggunakan xampp direktori C:\xampp\htdocs memang digunakan sebagai dukumen root untuk menyimpan file website yang akan diakses melalui server lokal.
+
+3.yang di maksud dengan perintah git : init,clone,remote,add,commit,push dan ceckout
+    1. git init
+       Perintah ini digunakan untuk membuat repository Git baru di dalam sebuah direktori. Ini menginisialisasi direktori tersebut sebagai repository Git, dengan membuat subdirektori .git yang menyimpan semua informasi terkait version control.
+    
+    2. git  clone
+       Perintah ini digunakan untuk menyalin repository yang sudah ada dari server atau lokasi lain ke komputer lokal.
+    
+    3. git remote
+       Perintah ini digunakan untuk mengelola repositori jarak jauh (remote repository). Dengan git remote, Anda dapat menambahkan, menghapus, atau melihat daftar repositori jarak jauh yang terhubung dengan repositori lokal Anda. Contoh penggunaan: git remote add origin <url-repositori> untuk menambahkan repositori jarak jauh baru.
+    
+    4. git add
+       Perintah ini digunakan untuk menambahkan perubahan yang telah Anda buat ke staging area (area persiapan) sebelum melakukan commit.
+    
+    5. git commit
+       Perintah ini digunakan untuk menyimpan perubahan yang telah ditambahkan ke staging area ke dalam repositori lokal.
+    
+    6. git push
+       Perintah ini digunakan untuk mengirimkan commit yang telah Anda buat di repositori lokal ke repositori jarak jauh.
+   
+    7. git checkout
+       Perintah ini digunakan untuk berpindah branch atau berpindah ke commit tertentu. Misalnya, git checkout <nama-cabang> akan memindahkan Anda ke cabang yang ditentukan. Anda juga dapat menggunakan git checkout <commit-id> untuk mengembalikan file ke keadaan pada commit tertentu.
+
+4. perbedaan antara GitHub dan GitLab
+    GitHub dan GitLab adalah dua platform populer yang digunakan untuk pengelolaan repositori Git, tetapi mereka memiliki beberapa perbedaan dalam fitur, fungsionalitas, dan pendekatan. Berikut adalah beberapa perbedaan utama antara GitHub dan GitLab:
+    1. Fokus dan Tujuan
+       GitHub: Awalnya dirancang sebagai platform untuk berbagi kode dan kolaborasi, GitHub sangat populer di kalangan pengembang open-source. GitHub juga memiliki fitur sosial yang kuat, seperti mengikuti pengguna lain, memberikan bintang pada repositori, dan diskusi di issue.
+       GitLab: GitLab lebih fokus pada pengembangan perangkat lunak yang terintegrasi, menawarkan fitur CI/CD (Continuous Integration/Continuous Deployment) yang lebih mendalam. GitLab bertujuan untuk menyediakan seluruh siklus hidup pengembangan perangkat lunak dalam satu platform.
+
+    2. Fitur CI/CD
+       GitHub: GitHub Actions adalah fitur CI/CD yang diperkenalkan untuk memungkinkan pengguna mengotomatiskan alur kerja pengembangan. Meskipun GitHub Actions cukup kuat, GitLab memiliki pendekatan yang lebih terintegrasi dan lebih awal dalam hal CI/CD.
+       GitLab: GitLab memiliki sistem CI/CD yang sangat terintegrasi dan mudah digunakan. Pengguna dapat dengan mudah mengonfigurasi pipeline CI/CD langsung dari repositori mereka, dan GitLab menyediakan banyak fitur untuk memantau dan mengelola pipeline tersebut.
+
+    3. Model Hosting
+       GitHub: GitHub menawarkan layanan hosting repositori di cloud (GitHub.com) dan juga menyediakan opsi untuk meng-host GitHub Enterprise di server lokal untuk perusahaan.
+       GitLab: GitLab juga menawarkan layanan cloud (GitLab.com) dan memungkinkan pengguna untuk meng-host GitLab di server lokal mereka sendiri. GitLab memiliki versi open-source yang dapat diunduh dan diinstal di server pribadi.
+
+    4. Pengelolaan Proyek
+       GitHub: GitHub menyediakan fitur seperti issue tracking, pull requests, dan project boards untuk manajemen proyek. Namun, fitur-fitur ini lebih sederhana dibandingkan dengan yang ditawarkan oleh GitLab.
+       GitLab: GitLab menawarkan fitur manajemen proyek yang lebih komprehensif, termasuk milestone, epics, dan burndown charts, yang membantu tim dalam perencanaan dan pelacakan kemajuan proyek.
+
+    5. Antarmuka Pengguna
+       GitHub: Antarmuka GitHub dikenal intuitif dan mudah digunakan, dengan fokus pada kolaborasi sosial dan berbagi kode.
+       GitLab: Antarmuka GitLab juga cukup ramah pengguna, tetapi mungkin terasa lebih kompleks karena banyaknya fitur yang ditawarkan.
+   
+    6. Model Lisensi
+       GitHub: GitHub memiliki model freemium, di mana pengguna dapat menggunakan layanan dasar secara gratis, tetapi fitur premium memerlukan langganan berbayar.
+       GitLab: GitLab juga memiliki model freemium, tetapi menawarkan lebih banyak fitur dalam versi gratisnya, terutama dalam hal CI/CD dan manajemen proyek.
+    
+    7. Komunitas dan Ekosistem
+       GitHub: GitHub memiliki komunitas pengembang yang sangat besar dan merupakan tempat utama untuk proyek open-source. Banyak proyek terkenal dan pustaka kode yang dihosting di GitHub.
+       GitLab: Meskipun GitLab juga memiliki komunitas yang berkembang, ia tidak sebesar GitHub. Namun, GitLab memiliki dukungan yang kuat untuk proyek-proyek yang memerlukan integrasi CI/CD yang mendalam.
+
+5. Perbedaan variable user dengan variable system
+    Variabel user dan system adalah dua jenis variabel lingkungan (environment variables) yang digunakan dalam sistem operasi untuk menyimpan informasi yang dapat diakses oleh aplikasi dan proses.
+    secara definisi variabel user  adalah variabel yang ditetapkan untuk pengguna tertentu. Setiap pengguna di sistem dapat memiliki variabel ini dengan nilai yang berbeda, variabel user ini hanya belaku untuk sesi pengguna yang saat ini aktif. jika pengguna lain masuk ke sisten, mereka tidak akann memiliki akses ke variael user yang di tetapkan oleh pengguna lain.
+    sedangkan variable system yaitu variabel yang ditetapkan untuk seluruh sistem dan berlaku untuk semua pengguna. Nilai dari variabel ini sama untuk semua pengguna yang mengakses sistem. yang berlaku untuk semua sesi penggunna dan proses yang berjalan di sistem. 
+
+6. Persamaan variable system dengan variable constant
+    Persamaan antara variabel sistem (system variable) dan variabel konstan (constant variable):
+     1. Keduanya digunakan dalam perhitungan atau proses dalam suatu sistem, Baik variabel sistem maupun variabel konstan digunakan dalam perhitungan, pemrograman, atau analisis data.
+
+     2. Keduanya memiliki nilai yang dapat direferensikan dalam suatu konteks. Variabel sistem menyimpan nilai yang bisa berubah selama eksekusi, sedangkan variabel konstan memiliki nilai tetap.
+
+     3. Digunakan dalam berbagai bidang ilmu. Keduanya digunakan dalam matematika, fisika, teknik, pemrograman, dan ilmu lainnya untuk merepresentasikan nilai dalam sistem tertentu.
+
+     4. Memiliki pengaruh dalam jalannya suatu program atau sistem. Dalam pemrograman atau sistem komputer, baik variabel sistem maupun variabel konstan dapat memengaruhi cara kerja suatu aplikasi atau proses.
